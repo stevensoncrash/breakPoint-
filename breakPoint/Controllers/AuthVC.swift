@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  AuthVC.swift
 //  breakPoint
 //
 //  Created by Stephen Reyes on 8/16/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class AuthVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
