@@ -10,25 +10,29 @@
 		0529489985DAF5097FA814FC /* Pods_breakPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A746C7598C69FDBDCD636660 /* Pods_breakPoint.framework */; };
 		4A340CA9212347A5004A07BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A340CA8212347A5004A07BF /* GoogleService-Info.plist */; };
 		4A340CAC21234FCE004A07BF /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A340CAB21234FCE004A07BF /* DataService.swift */; };
+		4A3D99CE2126273000AC4DD4 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D99CD2126273000AC4DD4 /* LogInVC.swift */; };
+		4A3D99D02126275200AC4DD4 /* EmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D99CF2126275200AC4DD4 /* EmailVC.swift */; };
 		4A6167C82122711B00EC0D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6167C72122711B00EC0D1B /* AppDelegate.swift */; };
 		4A6167CA2122711C00EC0D1B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6167C92122711C00EC0D1B /* FirstViewController.swift */; };
 		4A6167CC2122711C00EC0D1B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6167CB2122711C00EC0D1B /* SecondViewController.swift */; };
 		4A6167CF2122711C00EC0D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6167CD2122711C00EC0D1B /* Main.storyboard */; };
-		4A6167D12122711D00EC0D1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6167D02122711D00EC0D1B /* Assets.xcassets */; };
 		4A6167D42122711D00EC0D1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6167D22122711D00EC0D1B /* LaunchScreen.storyboard */; };
+		4AADD6C72123BBDB007CD723 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AADD6C62123BBDB007CD723 /* Assests.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A340CA8212347A5004A07BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4A340CAB21234FCE004A07BF /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4A3D99CD2126273000AC4DD4 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		4A3D99CF2126275200AC4DD4 /* EmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVC.swift; sourceTree = "<group>"; };
 		4A6167C42122711B00EC0D1B /* breakPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6167C72122711B00EC0D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A6167C92122711C00EC0D1B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		4A6167CB2122711C00EC0D1B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		4A6167CE2122711C00EC0D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4A6167D02122711D00EC0D1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A6167D32122711D00EC0D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A6167D52122711D00EC0D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AADD6C62123BBDB007CD723 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
 		8105E4C0E179435FE1EA238D /* Pods-breakPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakPoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-breakPoint/Pods-breakPoint.release.xcconfig"; sourceTree = "<group>"; };
 		A746C7598C69FDBDCD636660 /* Pods_breakPoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakPoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0822644D96B2D399D2291E2 /* Pods-breakPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakPoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-breakPoint/Pods-breakPoint.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,7 +86,7 @@
 				4A6167DB2122713000EC0D1B /* Controllers */,
 				4A6167C72122711B00EC0D1B /* AppDelegate.swift */,
 				4A6167CD2122711C00EC0D1B /* Main.storyboard */,
-				4A6167D02122711D00EC0D1B /* Assets.xcassets */,
+				4AADD6C62123BBDB007CD723 /* Assests.xcassets */,
 				4A6167D22122711D00EC0D1B /* LaunchScreen.storyboard */,
 				4A340CA8212347A5004A07BF /* GoogleService-Info.plist */,
 				4A6167D52122711D00EC0D1B /* Info.plist */,
@@ -95,6 +99,8 @@
 			children = (
 				4A6167C92122711C00EC0D1B /* FirstViewController.swift */,
 				4A6167CB2122711C00EC0D1B /* SecondViewController.swift */,
+				4A3D99CD2126273000AC4DD4 /* LogInVC.swift */,
+				4A3D99CF2126275200AC4DD4 /* EmailVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,7 +205,7 @@
 			files = (
 				4A6167D42122711D00EC0D1B /* LaunchScreen.storyboard in Resources */,
 				4A340CA9212347A5004A07BF /* GoogleService-Info.plist in Resources */,
-				4A6167D12122711D00EC0D1B /* Assets.xcassets in Resources */,
+				4AADD6C72123BBDB007CD723 /* Assests.xcassets in Resources */,
 				4A6167CF2122711C00EC0D1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +263,8 @@
 				4A6167CC2122711C00EC0D1B /* SecondViewController.swift in Sources */,
 				4A6167C82122711B00EC0D1B /* AppDelegate.swift in Sources */,
 				4A6167CA2122711C00EC0D1B /* FirstViewController.swift in Sources */,
+				4A3D99D02126275200AC4DD4 /* EmailVC.swift in Sources */,
+				4A3D99CE2126273000AC4DD4 /* LogInVC.swift in Sources */,
 				4A340CAC21234FCE004A07BF /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

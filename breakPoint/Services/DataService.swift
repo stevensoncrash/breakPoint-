@@ -34,9 +34,6 @@ class DataService {
         return _REF_FEED
     }
     
-    
-    
-    
     func createUser(uid: String, userdata: Dictionary<String, Any> ) {
         REF_USERS.child(uid).updateChildValues(userdata)
     }
