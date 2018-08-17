@@ -14,6 +14,7 @@
 		4A3D99D421262A1F00AC4DD4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D99D321262A1F00AC4DD4 /* LoginVC.swift */; };
 		4A3D99D621262AA600AC4DD4 /* InsetTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D99D521262AA600AC4DD4 /* InsetTextfield.swift */; };
 		4A3D99D821262F7000AC4DD4 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D99D721262F7000AC4DD4 /* ShadowView.swift */; };
+		4A3D99DA2126334C00AC4DD4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D99D92126334C00AC4DD4 /* AuthService.swift */; };
 		4A6167C82122711B00EC0D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6167C72122711B00EC0D1B /* AppDelegate.swift */; };
 		4A6167CA2122711C00EC0D1B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6167C92122711C00EC0D1B /* FirstViewController.swift */; };
 		4A6167CC2122711C00EC0D1B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6167CB2122711C00EC0D1B /* SecondViewController.swift */; };
@@ -29,6 +30,7 @@
 		4A3D99D321262A1F00AC4DD4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4A3D99D521262AA600AC4DD4 /* InsetTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextfield.swift; sourceTree = "<group>"; };
 		4A3D99D721262F7000AC4DD4 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		4A3D99D92126334C00AC4DD4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		4A6167C42122711B00EC0D1B /* breakPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6167C72122711B00EC0D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A6167C92122711C00EC0D1B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				4A340CAB21234FCE004A07BF /* DataService.swift */,
+				4A3D99D92126334C00AC4DD4 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -244,12 +247,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-breakPoint/Pods-breakPoint-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -269,6 +274,7 @@
 				4A3D99D621262AA600AC4DD4 /* InsetTextfield.swift in Sources */,
 				4A3D99D2212629D000AC4DD4 /* AuthVC.swift in Sources */,
 				4A6167CC2122711C00EC0D1B /* SecondViewController.swift in Sources */,
+				4A3D99DA2126334C00AC4DD4 /* AuthService.swift in Sources */,
 				4A3D99D421262A1F00AC4DD4 /* LoginVC.swift in Sources */,
 				4A3D99D821262F7000AC4DD4 /* ShadowView.swift in Sources */,
 				4A6167C82122711B00EC0D1B /* AppDelegate.swift in Sources */,
