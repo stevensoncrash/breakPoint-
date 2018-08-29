@@ -11,7 +11,6 @@
 		4A340CA9212347A5004A07BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A340CA8212347A5004A07BF /* GoogleService-Info.plist */; };
 		4A340CAC21234FCE004A07BF /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A340CAB21234FCE004A07BF /* DataService.swift */; };
 		4A3D99D2212629D000AC4DD4 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D99D1212629D000AC4DD4 /* AuthVC.swift */; };
-		4A3D99D421262A1F00AC4DD4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D99D321262A1F00AC4DD4 /* LoginVC.swift */; };
 		4A3D99D621262AA600AC4DD4 /* InsetTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D99D521262AA600AC4DD4 /* InsetTextfield.swift */; };
 		4A3D99D821262F7000AC4DD4 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D99D721262F7000AC4DD4 /* ShadowView.swift */; };
 		4A3D99DA2126334C00AC4DD4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D99D92126334C00AC4DD4 /* AuthService.swift */; };
@@ -20,6 +19,7 @@
 		4A6167CC2122711C00EC0D1B /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6167CB2122711C00EC0D1B /* GroupsVC.swift */; };
 		4A6167CF2122711C00EC0D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6167CD2122711C00EC0D1B /* Main.storyboard */; };
 		4A6167D42122711D00EC0D1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6167D22122711D00EC0D1B /* LaunchScreen.storyboard */; };
+		4AA9FFE92135C65F0083EB7C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA9FFE82135C65F0083EB7C /* LoginVC.swift */; };
 		4AADD6C72123BBDB007CD723 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AADD6C62123BBDB007CD723 /* Assests.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,6 @@
 		4A340CA8212347A5004A07BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4A340CAB21234FCE004A07BF /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4A3D99D1212629D000AC4DD4 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
-		4A3D99D321262A1F00AC4DD4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4A3D99D521262AA600AC4DD4 /* InsetTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextfield.swift; sourceTree = "<group>"; };
 		4A3D99D721262F7000AC4DD4 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		4A3D99D92126334C00AC4DD4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		4A6167CE2122711C00EC0D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A6167D32122711D00EC0D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A6167D52122711D00EC0D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA9FFE82135C65F0083EB7C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4AADD6C62123BBDB007CD723 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
 		8105E4C0E179435FE1EA238D /* Pods-breakPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakPoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-breakPoint/Pods-breakPoint.release.xcconfig"; sourceTree = "<group>"; };
 		A746C7598C69FDBDCD636660 /* Pods_breakPoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakPoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +106,7 @@
 				4A6167C92122711C00EC0D1B /* FeedVC.swift */,
 				4A6167CB2122711C00EC0D1B /* GroupsVC.swift */,
 				4A3D99D1212629D000AC4DD4 /* AuthVC.swift */,
-				4A3D99D321262A1F00AC4DD4 /* LoginVC.swift */,
+				4AA9FFE82135C65F0083EB7C /* LoginVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -275,8 +275,8 @@
 				4A3D99D2212629D000AC4DD4 /* AuthVC.swift in Sources */,
 				4A6167CC2122711C00EC0D1B /* GroupsVC.swift in Sources */,
 				4A3D99DA2126334C00AC4DD4 /* AuthService.swift in Sources */,
-				4A3D99D421262A1F00AC4DD4 /* LoginVC.swift in Sources */,
 				4A3D99D821262F7000AC4DD4 /* ShadowView.swift in Sources */,
+				4AA9FFE92135C65F0083EB7C /* LoginVC.swift in Sources */,
 				4A6167C82122711B00EC0D1B /* AppDelegate.swift in Sources */,
 				4A6167CA2122711C00EC0D1B /* FeedVC.swift in Sources */,
 				4A340CAC21234FCE004A07BF /* DataService.swift in Sources */,
