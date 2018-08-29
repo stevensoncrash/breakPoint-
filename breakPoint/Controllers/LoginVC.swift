@@ -17,8 +17,8 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordField: InsetTextfield!
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailField.delegate = self
-        passwordField.delegate = self
+        emailField.delegate = self as? UITextFieldDelegate
+        passwordField.delegate = self as? UITextFieldDelegate
 
         // Do any additional setup after loading the view.
     }
@@ -32,6 +32,18 @@ class LoginVC: UIViewController {
                 } else {
                     print(String(describing: loginError?.localizedDescription))
                 }
+                AuthService.instance.registerUser(withEmail: self.emailField.text!, andPassword: self.passwordField.text!, userCreationComplete: { (success, registrationError) in
+                    if success {
+                        AuthService.instance.loginUser(withEmail: self.emailField.text!, andPassword: self.passwordField.text!, loginComplete: { (success, nil) in
+                            self.dismiss(animated: true, completion: nil)
+                            if success {
+                                print("successfully registered user!")
+                            } else {
+                                print(String(describing: registrationError?.localizedDescription))
+                            }
+                        })
+                    }
+                })
             }
         }
     }
@@ -42,4 +54,5 @@ class LoginVC: UIViewController {
 }
 
 extension LoginVC: UITextViewDelegate {
+    
 }
