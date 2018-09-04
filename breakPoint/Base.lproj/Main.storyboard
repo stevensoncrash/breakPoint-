@@ -525,7 +525,7 @@
                                     <constraint firstItem="M7m-0G-Xef" firstAttribute="centerX" secondItem="idh-s4-GxF" secondAttribute="centerX" constant="1" id="xlc-1D-cRk"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j3U-5E-hEf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="j3U-5E-hEf">
                                 <rect key="frame" x="20" y="90" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="XCC-be-mVg"/>

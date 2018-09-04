@@ -21,6 +21,7 @@
 		4A6167CC2122711C00EC0D1B /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6167CB2122711C00EC0D1B /* GroupsVC.swift */; };
 		4A6167CF2122711C00EC0D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6167CD2122711C00EC0D1B /* Main.storyboard */; };
 		4A6167D42122711D00EC0D1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6167D22122711D00EC0D1B /* LaunchScreen.storyboard */; };
+		4A777AF7213EF9D5002495A5 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A777AF6213EF9D5002495A5 /* UIViewExt.swift */; };
 		4AA9FFE92135C65F0083EB7C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA9FFE82135C65F0083EB7C /* LoginVC.swift */; };
 		4AADD6C72123BBDB007CD723 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AADD6C62123BBDB007CD723 /* Assests.xcassets */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 		4A6167CE2122711C00EC0D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A6167D32122711D00EC0D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A6167D52122711D00EC0D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A777AF6213EF9D5002495A5 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		4AA9FFE82135C65F0083EB7C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4AADD6C62123BBDB007CD723 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
 		8105E4C0E179435FE1EA238D /* Pods-breakPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakPoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-breakPoint/Pods-breakPoint.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		4A6167DE2122716400EC0D1B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4A777AF6213EF9D5002495A5 /* UIViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A777AF7213EF9D5002495A5 /* UIViewExt.swift in Sources */,
 				4A44B66C213765E40073A68D /* MeVC.swift in Sources */,
 				4A3D99D621262AA600AC4DD4 /* InsetTextfield.swift in Sources */,
 				4A3D99D2212629D000AC4DD4 /* AuthVC.swift in Sources */,
