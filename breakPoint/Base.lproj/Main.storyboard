@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -192,7 +191,7 @@
                                 <rect key="frame" x="0.0" y="62" width="375" height="275"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="wHa-MV-QKF">
-                                        <rect key="frame" x="137" y="30" width="100" height="100"/>
+                                        <rect key="frame" x="137.5" y="30" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="Gh0-tu-Nae"/>
                                             <constraint firstAttribute="width" constant="100" id="pon-SB-33e"/>
@@ -239,6 +238,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wei-wd-ldY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1580" y="-18"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eci-OD-w1H">
+            <objects>
+                <viewController id="k49-4g-Fmk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pYq-Kz-USc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4d-gY-UHn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRd-xg-KV6">
+                                        <rect key="frame" x="325" y="30" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="AYW-4y-K2P"/>
+                                            <constraint firstAttribute="height" constant="30" id="cct-2o-2Eo"/>
+                                        </constraints>
+                                        <state key="normal" image="addNewIcon"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_newGroup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLZ-YQ-cXl">
+                                        <rect key="frame" x="137.5" y="35" width="100" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Ext-tZ-S6G"/>
+                                            <constraint firstAttribute="width" constant="100" id="Qqp-de-Qc0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ERz-lC-JfZ"/>
+                                    <constraint firstItem="cLZ-YQ-cXl" firstAttribute="centerX" secondItem="t4d-gY-UHn" secondAttribute="centerX" id="Mgr-fP-Yof"/>
+                                    <constraint firstItem="cLZ-YQ-cXl" firstAttribute="centerY" secondItem="jRd-xg-KV6" secondAttribute="centerY" id="a6g-JN-pI3"/>
+                                    <constraint firstAttribute="trailing" secondItem="jRd-xg-KV6" secondAttribute="trailing" constant="20" id="ezI-N2-gaU"/>
+                                    <constraint firstItem="jRd-xg-KV6" firstAttribute="top" secondItem="t4d-gY-UHn" secondAttribute="top" constant="30" id="lgn-4v-TcA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="t4d-gY-UHn" firstAttribute="trailing" secondItem="BoB-uV-83I" secondAttribute="trailing" id="CTm-OA-fQb"/>
+                            <constraint firstItem="t4d-gY-UHn" firstAttribute="leading" secondItem="BoB-uV-83I" secondAttribute="leading" id="aw5-aU-7WW"/>
+                            <constraint firstItem="t4d-gY-UHn" firstAttribute="top" secondItem="pYq-Kz-USc" secondAttribute="top" id="iAo-40-UeF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BoB-uV-83I"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QLe-8K-YbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1580" y="673"/>
         </scene>
         <!--Groups-->
         <scene sceneID="wg7-f3-ORb">
@@ -333,7 +385,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pL2-ci-nV4" customClass="ShadowView" customModule="breakPoint" customModuleProvider="target">
-                                <rect key="frame" x="23" y="173.5" width="328" height="320"/>
+                                <rect key="frame" x="23.5" y="173.5" width="328" height="320"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="QI4-CA-ssT">
                                         <rect key="frame" x="20" y="20" width="288" height="245"/>
@@ -475,7 +527,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrC-cT-1aQ">
-                                <rect key="frame" x="147" y="260" width="80" height="33"/>
+                                <rect key="frame" x="147.5" y="260" width="80" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="hHe-1J-qhd"/>
                                 </constraints>
@@ -580,7 +632,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@breakPoint.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R06-wk-IJF">
-                                <rect key="frame" x="100" y="110" width="275" height="21"/>
+                                <rect key="frame" x="100" y="109.5" width="275" height="21"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
                                 <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
