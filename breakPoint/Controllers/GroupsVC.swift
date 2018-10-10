@@ -20,6 +20,8 @@ class GroupsVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func createNewgGroupBtnWasPressed(_ sender: Any) {
+    }
+    
 }
 
