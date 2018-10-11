@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateGroupsVC: UIViewController {
     
@@ -17,8 +18,12 @@ class CreateGroupsVC: UIViewController {
     @IBOutlet weak var groupMembersLbl: UIStackView!
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }
@@ -27,5 +32,23 @@ class CreateGroupsVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func DoneBtnPressed(_ sender: UIButton) {
+        //do something that would confirm a new group is made and then procede to post new group instantly in the view.
     }
 }
+
+extension CreateGroupsVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "userCell") as? UserCell else { return UITableViewCell() }
+        let profileImage = UIImage(named: "defaultProfileImage")
+        
+        cell.configureCell(profileImage: profileImage!, email: "peter@parker.com", isSelected: true)
+        return cell
+   }
+ }
