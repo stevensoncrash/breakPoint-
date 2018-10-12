@@ -83,7 +83,7 @@ class DataService {
                 let email = users.childSnapshot(forPath: "email").value as! String
                 
                 if email.contains(query) == true && email != Auth.auth().currentUser!.email {
-                    emailArray.append(email)
+                   emailArray.append(email)
                 }
             }
              handler(emailArray)
