@@ -302,26 +302,19 @@
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l67-bv-OiY">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l67-bv-OiY">
                                         <rect key="frame" x="0.0" y="208" width="335" height="349"/>
-                                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="60" id="3iK-sG-AaX" customClass="UserCell" customModule="breakPoint" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="335" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3iK-sG-AaX" id="grR-k6-wz7">
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3iK-sG-AaX" id="grR-k6-wz7" customClass="UserCell" customModule="breakPoint" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="aka-Wq-h0Z">
-                                                            <rect key="frame" x="10" y="0.0" width="44" height="44"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="44" id="BU7-Xc-3r7"/>
-                                                                <constraint firstAttribute="width" constant="44" id="FZm-HM-Qmu"/>
-                                                            </constraints>
-                                                        </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@breakpoint.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="gz0-ex-5ZA">
-                                                            <rect key="frame" x="74" y="21" width="224" height="21"/>
+                                                            <rect key="frame" x="74" y="13" width="206" height="21"/>
                                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
                                                             <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -333,18 +326,24 @@
                                                                 <constraint firstAttribute="width" constant="22" id="rsB-di-EfK"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="aka-Wq-h0Z">
+                                                            <rect key="frame" x="10" y="0.0" width="44" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="44" id="Hsz-mU-GcT"/>
+                                                                <constraint firstAttribute="height" constant="44" id="Jb3-sn-jkB"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="aka-Wq-h0Z" secondAttribute="bottom" id="Ece-wh-1A7"/>
+                                                        <constraint firstItem="aka-Wq-h0Z" firstAttribute="leading" secondItem="grR-k6-wz7" secondAttribute="leading" constant="10" id="EHf-21-ikp"/>
                                                         <constraint firstItem="n6h-ol-7gh" firstAttribute="top" secondItem="grR-k6-wz7" secondAttribute="topMargin" id="Ifh-Pg-IuQ"/>
-                                                        <constraint firstItem="gz0-ex-5ZA" firstAttribute="top" secondItem="grR-k6-wz7" secondAttribute="topMargin" constant="10" id="MO9-hp-dge"/>
-                                                        <constraint firstItem="n6h-ol-7gh" firstAttribute="leading" secondItem="gz0-ex-5ZA" secondAttribute="trailing" constant="10" id="Pc4-ON-T41"/>
                                                         <constraint firstItem="n6h-ol-7gh" firstAttribute="trailing" secondItem="grR-k6-wz7" secondAttribute="trailingMargin" constant="10" id="Q42-K1-qwK"/>
-                                                        <constraint firstItem="gz0-ex-5ZA" firstAttribute="leading" secondItem="aka-Wq-h0Z" secondAttribute="trailing" constant="20" id="Y45-0U-gk2"/>
+                                                        <constraint firstItem="gz0-ex-5ZA" firstAttribute="leading" secondItem="aka-Wq-h0Z" secondAttribute="trailing" constant="20" id="VZd-24-fhP"/>
+                                                        <constraint firstItem="aka-Wq-h0Z" firstAttribute="top" secondItem="grR-k6-wz7" secondAttribute="top" id="gjl-dM-0J3"/>
+                                                        <constraint firstAttribute="bottom" secondItem="gz0-ex-5ZA" secondAttribute="bottom" constant="10" id="iLT-yg-a2G"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="n6h-ol-7gh" secondAttribute="bottom" id="k9D-sR-Ifs"/>
-                                                        <constraint firstItem="aka-Wq-h0Z" firstAttribute="top" secondItem="grR-k6-wz7" secondAttribute="top" id="o1V-4Z-dbC"/>
-                                                        <constraint firstItem="aka-Wq-h0Z" firstAttribute="leading" secondItem="grR-k6-wz7" secondAttribute="leading" constant="10" id="pRj-Vf-AZk"/>
+                                                        <constraint firstAttribute="bottom" secondItem="aka-Wq-h0Z" secondAttribute="bottom" id="lAz-Hz-iSS"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -74,6 +74,21 @@ class DataService {
             handler(messageArray)
         }
     }
+    
+    func getUserEmail(forSearchQuery query: String, handler: @escaping (_ emailArray: [String]) -> ()) {
+        var emailArray = [String]()
+        REF_USERS.observe(.value) { (userSnapshot) in
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else {return}
+            for users in userSnapshot {
+                let email = users.childSnapshot(forPath: "email").value as! String
+                
+                if email.contains(query) == true && email != Auth.auth().currentUser!.email {
+                    emailArray.append(email)
+                }
+            }
+             handler(emailArray)
+        }
+    }
 }
 
 
