@@ -31,8 +31,8 @@ class AuthVC: UIViewController {
         present(loginVC!, animated: true, completion: nil)
     }
     
-    @IBAction func googleSignInBtnWasPressed(_ sender: Any) {
-        //let googleVC = storyboard?.instantiateViewController(withIdentifier: "GoogleVC")
+    @IBAction func twitterSignInWasPressed(_ sender: Any) {
+        //let twitterVC = storyboard?.instantiateViewController(withIdentifier: "GoogleVC")
         //present(googleVC, animated: true, completion: nil)
     }
     

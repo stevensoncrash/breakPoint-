@@ -53,7 +53,20 @@ class CreateGroupsVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func DoneBtnPressed(_ sender: UIButton) {
-        //do something that would confirm a new group is made and then procede to post new group instantly in the view.
+        if titleTextField.text != "" && descriptionTextField.text != "" {
+            DataService.instance.getIDs(forUsernames: chosenUserArray) { (idsArray) in
+                var userIds = idsArray
+                userIds.append((Auth.auth().currentUser?.uid)!)
+                
+                DataService.instance.createGroup(withTitle: self.titleTextField.text!, andDescription: self.descriptionTextField.text!, forUserIDs: userIds, handler: { (groupCreated) in
+                    if groupCreated {
+                        self.dismiss(animated: true, completion: nil)
+                    } else {
+                        print("Group could not be created. Please try again!")
+                    }
+                })
+            }
+        }
     }
 }
 
