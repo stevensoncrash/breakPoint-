@@ -13,17 +13,34 @@ class GroupsVC: UIViewController {
     
     @IBOutlet weak var groupsTableView: UITableView!
     
+    var groupArray = [Group]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         groupsTableView.dataSource = self
         groupsTableView.delegate = self
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super .viewDidAppear(animated)
+        DataService.instance.REF_GROUPS.observe(.value) { (snapShot) in
+            DataService.instance.getAllGroups { (returnedGroupArray) in
+                self.groupArray = returnedGroupArray.reversed()
+                self.groupsTableView.reloadData()
+            }
+        }
+    }
 
     @IBAction func createNewgGroupBtnWasPressed(_ sender: Any) {
        // let CreateGroupsVC = storyboard?.instantiateInitialViewController("CreateGroupsVC")
         // present(CreateGroupsVC, animated: true, completion: nil)
     }
+    
+    
+    
+    
 }
 
 extension GroupsVC: UITableViewDelegate, UITableViewDataSource {
@@ -32,11 +49,12 @@ extension GroupsVC: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return groupArray.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = groupsTableView.dequeueReusableCell(withIdentifier: "groupCell") as? GroupCell else { return UITableViewCell()}
-        cell.configureGroupCell(title: "Jonh Cena", description: "A group that cannot be seen.", memberCount: 4)
+        let group = groupArray[indexPath.row]
+        cell.configureGroupCell(title: group.groupTitle, description: group.groupDesc, memberCount: group.memberCount)
         return cell
     }
 }

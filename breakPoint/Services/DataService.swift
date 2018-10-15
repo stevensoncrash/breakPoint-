@@ -107,10 +107,23 @@ class DataService {
         REF_GROUPS.childByAutoId().updateChildValues(["title" : title, "description": description, "members": ids])
         handler(true)
     }
-    
-//    func getAllGroupMessages(handler: @escaping (_ groupMessages: [group]) -> ()){
-//
-//    }
+    // work on this function later....
+    func getAllGroups(handler: @escaping (_ groupsArray: [Group]) -> ()){
+        var groupArray = [Group]()
+        REF_GROUPS.observeSingleEvent(of: .value) { (groupMessageSnapshot) in
+            guard let groupMessageSnapshot = groupMessageSnapshot.children.allObjects as? [DataSnapshot] else {return}
+            for group in groupMessageSnapshot {
+                let memberArray = group.childSnapshot(forPath: "members").value as! [String]
+                if memberArray.contains((Auth.auth().currentUser?.uid)!) {
+                    let title = group.childSnapshot(forPath: "title").value as! String
+                    let description = group.childSnapshot(forPath: "description").value as! String
+                    let group = Group(groupTitle: title, groupDesc: description, key: group.key, memberCount: memberArray.count, members: memberArray)
+                    groupArray.append(group)
+                }
+            }
+            handler(groupArray)
+        }
+    }
     
 }
 
