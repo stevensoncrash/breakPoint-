@@ -14,7 +14,6 @@ class FeedVC: UIViewController {
     
     var messageArray = [Message]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -48,7 +47,5 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
             cell.configureCell(profileImage: image!, email: returnedUserName , content: message.content)
         }
          return cell
-       
-        
   }
 }

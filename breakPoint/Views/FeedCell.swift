@@ -19,5 +19,4 @@ class FeedCell: UITableViewCell {
         self.emailLbl.text = email
         self.contentLbl.text = content
     }
-
 }

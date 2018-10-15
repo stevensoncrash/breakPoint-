@@ -108,6 +108,10 @@ class DataService {
         handler(true)
     }
     
+//    func getAllGroupMessages(handler: @escaping (_ groupMessages: [group]) -> ()){
+//
+//    }
+    
 }
 
 
