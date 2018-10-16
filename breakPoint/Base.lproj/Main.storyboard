@@ -247,7 +247,7 @@
         <!--Group FeedVC-->
         <scene sceneID="QJT-V1-oN4">
             <objects>
-                <viewController id="RWl-3c-5vq" customClass="GroupFeedVC" customModule="breakPoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupFeedVC" id="RWl-3c-5vq" customClass="GroupFeedVC" customModule="breakPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Re1-Ez-1QH"/>
                         <viewControllerLayoutGuide type="bottom" id="N5h-gq-yjV"/>
@@ -402,6 +402,7 @@
                     </view>
                     <connections>
                         <outlet property="groupTitleLbl" destination="FTh-FB-DGm" id="l7d-R0-Xka"/>
+                        <outlet property="memberLbl" destination="qkZ-xg-vfD" id="YFo-Eh-RWi"/>
                         <outlet property="messageTextField" destination="y6c-pS-W7j" id="cAz-N0-9pE"/>
                         <outlet property="sendBtn" destination="crB-1G-hJ7" id="JTT-Az-3pf"/>
                         <outlet property="sendBtnView" destination="A5U-Kq-nY9" id="9MH-3n-jpr"/>
