@@ -32,7 +32,7 @@ class AuthVC: UIViewController {
     }
     
     @IBAction func twitterSignInWasPressed(_ sender: Any) {
-        //let twitterVC = storyboard?.instantiateViewController(withIdentifier: "GoogleVC")
+        //let twitterVC = storyboard?.instantiateViewController(withIdentifier: "TwitterLoginVC")
         //present(googleVC, animated: true, completion: nil)
     }
     
