@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '11.4'
+ platform :ios, '11.4'
 
 target 'breakPoint' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -8,6 +8,7 @@ target 'breakPoint' do
   # Pods for breakPoint
   pod 'Firebase/Database'
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 
 
 
